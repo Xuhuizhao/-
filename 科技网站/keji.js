@@ -26,6 +26,11 @@ window.onload = function() {
 		}
 		i_meau[this.index].style.color="black";
 		i_xyd[this.index].style.background="orange";
+		var i_yidong=this.index*60;
+		animate($("i_xjt"),{left:i_yidong},function a(){});
+		
+		
+		
 		
 		}
 	   i_xyd[i].onclick = function() {
@@ -38,6 +43,10 @@ window.onload = function() {
 	     }
 		i_xyd[this.index].style.background="orange";
 		i_meau[this.index].style.color="black";
+		var i_yidong=this.index*60;
+		
+		animate($("i_xjt"),{left:i_yidong},function a(){});
+		
 	}
 	
 	
@@ -47,6 +56,7 @@ window.onload = function() {
 //	页面滚动函数封装
 	function yundong(i_a){
 			target = i_zym[i_a].offsetTop;
+//			console.log(target);
 			console.log(target);
 			var time = setInterval(function() {
 				if(leader > target - 1 && leader < target + 1) {

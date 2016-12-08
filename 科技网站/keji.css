@@ -5,6 +5,7 @@
 li{
 	list-style: none;
 }
+/*主体定位设置*/
 html,body{
 	height: 100%;
 	width: 100%;
@@ -13,40 +14,69 @@ html,body{
 	height: 100%;
 	width: 100%;
 }
-div li{
+#i_zym ul{
+	height: 100%;
+	width: 100%;
+}
+
+#i_zym>ul>li{
 	height: 100%;
 	width: 100%;
 	border: 1px solid green;
+	/*position: absolute;*/
 }
+#i_zym>ul>li:nth-child(1){
+	position: absolute;
+	top:0%;
+}
+#i_zym>ul>li:nth-child(2){
+	position: absolute;
+	top:100%;
+}
+#i_zym>ul>li:nth-child(3){
+	position: absolute;
+	top:200%;
+}
+#i_zym>ul>li:nth-child(4){
+	position: absolute;
+	top:300%;
+}
+#i_zym>ul>li:nth-child(5){
+	position: absolute;
+	top:400%;
+}
+
 #i_dhlbox{
 	height: 60px;
 	width: 100%;
 }
 /*导航栏*/
 #i_dhl{
-	height: 60px;
+	height: 7%;
 	width: 1500px;
 	position: absolute;
     top: 0px;
     left: 50%;
     margin-left: -750px;
-	border: 1px solid green;
+	/*border: 1px solid green;*/
 	position: fixed;
 	top:0px;
+	cursor: pointer;
+	z-index: 1000000000;
     
 }
 #i_dhl>img:nth-child(1){
 	position: absolute;
 	top:20px;
 	left:320px;
-	border: 1px solid green;
+	/*border: 1px solid green;*/
 	
 }
 #i_dhl img:nth-child(2){
 	position: absolute;
 	top:37px;
 	left:515px;
-	border: 1px solid green;
+	/*border: 1px solid green;*/
 	
 }
 /*菜单*/
@@ -56,27 +86,28 @@ div li{
 	position: absolute;
 	top:0px;
 	left: 850px;
-	border: 1px solid green;
+	/*border:1px solid green;*/
 }
 #i_meau ul li{
 	float:left;
 	height: 30px;
 	width: 60px;
-	border: 1px solid green;
+	/*border: 1px solid green;*/
 	padding-top: 30px;
 	text-align: center;
 	
 }
-/*小圆点*/
+/*右边小圆点*/
 #i_xyd{
 	height: 10px;
 	width: 150px;
-	border: 1px solid green;
+	/*border: 1px solid green;*/
 	transform: rotateZ(90deg);
 	position: fixed;
 	top: 50%;
 	margin-top:-10px;
 	right:-70px;
+	z-index: 100000000000;
 }
 #i_xyd ul li{
 	float:left;
@@ -84,10 +115,68 @@ div li{
 	width: 10px;
 	border-radius: 5px;
 	margin-left: 10px;
+	border: 1px solid white;
+}
+/*第一页面背景设置*/
+#i_onepage{
+	height: 790px;
+	width: 1500px;
+	position: absolute;
+	top: 60px;
+	left: 50%;
+	margin-left: -750px;
+	border: 1px solid blue;
+	background-image:url(images/2Q==.jpg);
+	background-size: 100% 100%;
+	z-index: -1;
+	
+	
+}
+/*导航栏小箭头*/
+#i_xjt{
+	height: 50px;
+	width: 60px;
+	text-align: center;
+	/*border: 1px solid green;*/
+	position: absolute;
+	top: 57px;
+	left: 0px;
+	z-index: 1000000;
+	
+}
+/*第一页面主动画*/
+#i_layer{
+	height: 350px;
+	width: 730px;
+	position: absolute;
+	top: 300px;
+	left: 50%;
+	margin-left: -365px;
 	border: 1px solid green;
 	
 	
 }
+#i_layer li{
+	height:350px;
+	width:730px;
+	
+}
+#i_yd{
+	height: 10px;
+	width: 100px;
+	position: absolute;
+	top: 500px;
+	left: 50%;
+	margin-left: -251px;
+	z-index: 1000000000000;
+}
+#i_yd ul li{
+	height: 10px;  
+	width: 10px;
+	border-radius: 5px;
+	border: 1px solid green;
+}
+
 
 
 
